@@ -17,13 +17,17 @@
   box-sizing: border-box;
 }
 
-h1,
-h2, {
+body {
+  background-color: var(--white);
   font-family: 'Lato', sans-serif;
   font-weight: var(--reg-font-weight);
-  line-height: var(--heading-height);
   color: var(--black);
-  background-color: var(--white);
+}
+
+h1,
+h2,
+p {
+  line-height: var(--heading-height);
 }
 
 h1 {
@@ -35,9 +39,7 @@ h2 {
 }
 
 p {
-  font-family: 'Lato', sans-serif;
   font-size: var(--reg-font-size);
-  font-weight: var(--reg-font-weight);
   color: var(--dark-grey);
 }
 

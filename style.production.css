@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
-* Browsers: last 2 version
+* Browsers: last 4 version
 */
 
 
@@ -12,37 +12,34 @@
 }
 
 body {
+  background-color: #ffffff;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  background-color: #ffffff;
   color: #000000;
 }
 
-
 h1 {
-  font-size: 36px;
-  font-weight: 400;
   line-height: 1.0;
 }
 
 h2 {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.0;
-
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: 400;
   line-height: 1.0;
 }
 
 p {
+  line-height: 1.0;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+p {
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
   color: #2b2b2b;
 }
 
@@ -50,6 +47,7 @@ a {
   color: #3d767b;
   opacity: 1;
     -webkit-transition: opacity .25s ease-in-out;
+    -o-transition: opacity .25s ease-in-out;
     transition: opacity .25s ease-in-out;
 }
 
@@ -91,6 +89,7 @@ button {
   width: 200px;
   height: 40px;
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -110,6 +109,7 @@ button {
   width: 200px;
   height: 40px;
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -146,29 +146,16 @@ button_secondary {
 }
 
 .profile {
-  max-width: 700px;
+  max-width: 750px;
   margin: auto;
 }
 
 .profile_portrait {
   float: left;
-  width: 250px;
+  width: 125px;
   height: auto;
   margin-right: 40px;
   border-radius: 50%;
-}
-
-.page-footer {
-  clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  width: 100%;
 }
 
 .page-header {
@@ -211,22 +198,31 @@ button_secondary {
   padding: 20px;
 }
 
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+}
+
 .ftr-grid {
   list-style-type: none;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50px 50px 50px;
   grid-template-columns: 50px 50px 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .ftr-grid_item {
   background-color: #ffffff;
   width: auto;
   margin: 0;
-  padding: 0px;
+  padding: 5px;
 }
 
 
