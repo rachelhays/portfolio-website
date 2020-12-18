@@ -8,7 +8,7 @@
   --black: #000000;
   --hov-foc-color: #48d1cc;
   --act-color: #5e4048;
-  --reg-font-size: 16px;
+  --reg-font-size: 18px;
   --reg-font-weight: 400;
   --heading-height: 1.0;
 }
@@ -19,28 +19,19 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: var(--reg-font-size);
   background-color: var(--white);
   color: var(--black);
 }
 
 
 h1 {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: var(--reg-font-weight);
   line-height: var(--heading-height);
 }
 
 h2 {
   font-size: 24px;
-  font-weight: var(--reg-font-weight);
-  line-height: var(--heading-height);
-
-}
-
-h3 {
-  font-size: 20px;
   font-weight: var(--reg-font-weight);
   line-height: var(--heading-height);
 }
@@ -71,12 +62,6 @@ a:hover, a:focus {
 
 a:active {
   color: var(--act-color);
-}
-
-#welcome-note {
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-  font-weight: 300;
 }
 
 button,
