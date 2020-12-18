@@ -73,6 +73,12 @@ a:active {
   color: var(--act-color);
 }
 
+#welcome-note {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  font-size: 18px;
+}
+
 button,
 .button {
   border: none;
