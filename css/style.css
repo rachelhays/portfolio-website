@@ -8,7 +8,7 @@
   --black: #000000;
   --hov-foc-color: #48d1cc;
   --act-color: #5e4048;
-  --reg-font-size: 18px;
+  --reg-font-size: 16px;
   --reg-font-weight: 400;
   --heading-height: 1.0;
 }
@@ -35,9 +35,9 @@ h2 {
 }
 
 p {
+  font-family: 'Lato', sans-serif;
   font-size: var(--reg-font-size);
   font-weight: var(--reg-font-weight);
-  line-height: 1.4;
   color: var(--dark-grey);
 }
 
@@ -108,13 +108,13 @@ button:focus
 }
 
 .profile {
-  max-width: 700px;
+  max-width: 750px;
   margin: auto;
 }
 
 .profile_portrait {
   float: left;
-  width: 250px;
+  width: 125px;
   height: auto;
   margin-right: 40px;
   border-radius: 50%;
