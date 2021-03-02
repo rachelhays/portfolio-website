@@ -11,66 +11,85 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 
   <body>
 
-    <header class="page-header">
-      <img src="img/temp logo.png" class="hdr-logo" alt="Logo for Rachel Smith, a box with the initials R.S." class="page-header_item">
+    <header>
+      <div id="bkg">
+        <div>
+        <nav>
+          <div class="nav-row">
+            <img src="img/rachelsmith logoshort.png" class="logo" alt="Logo for Rachel Smith, a box with her name">
 
-      <nav class="main-navigation page-header_item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">Bio</a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
+            <ul class="main-nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="work.html">Projects</a>
+              </li>
+              <li>
+                <a href="about.html">Bio</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+        <div class="hero-text-box">
+          <h1>Hi, I'm Rachel Smith</h1><br>
+          <h2>I'm a full-stack software developer</h2>
+          <h2>from "Rocket City" Huntsville, Alabama</h2>
+          <a class="btn btn-full" href="work.html">Projects</a>
+          <a class="btn btn-ghost" href="files/rsmith_cv.pdf" target="_blank">CV/Resume</a>
+          <br><br>
+
+
+            <div class="home-social">
+              <h3>CONNECT WITH ME:</h3>
+              <div class="home-social-grid">
+                <div class="home-social-grid_item">
+                  <li>
+                    <a href="https://github.com/rachelhays?tab=repositories" alt="" target="_blank"><img src="img/github.png" alt="GitHub link" width="30" height="30"></a>
+                  </li>
+                </div>
+
+                <div class="home-social-grid_item">
+                  <li>
+                    <a href="https://twitter.com/RachelHaysSmit1" alt="" target="_blank"><img src="img/twitter.png" alt="Twitter link" width="30" height="30"></a>
+                  </li>
+                </div>
+
+                <div class="home-social-grid_item">
+                  <li>
+                    <a href="https://www.linkedin.com/in/rachel-hays-smith-982a58207/" alt="" target="_blank"><img src="img/linkedin.png" alt="LinkedIn link" width="30" height="30"></a>
+                  </li>
+                </div>
+              </div>
+
+      </div>
+
+      </div>
+
     </header>
 
 
-    <div class="profile">
-      <img src="img/rachel-smith.jpg" class="profile_portrait" alt="Rachel Smith portrait">
+    <footer class="home-footer">
       <br>
-      <h1>RACHEL H. SMITH</h1>
-      <h2>Full-stack Software Developer</h2><br>
-      <p>
-        <button class="button">Projects</button>
-        <button class="button_secondary">Resume</button>
-      </p>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <footer class="page-footer">
-
-      <div class="ftr-grid">
-        <div class="ftr-grid_item">
-          <li>
-            <a href="https://github.com" alt="" target="_blank"><img src="img/github.png" alt="GitHub link" width="30" height="30"></a>
-          </li>
-        </div>
-
-        <div class="ftr-grid_item">
-          <li>
-            <a href="https://twitter.com" alt="" target="_blank"><img src="img/twitter.png" alt="Twitter link" width="30" height="30"></a>
-          </li>
-        </div>
-
-        <div class="ftr-grid_item">
-          <li>
-            <a href="https://linkedin.com" alt="" target="_blank"><img src="img/linkedin.png" alt="LinkedIn link" width="30" height="30"></a>
-          </li>
-        </div>
-
+      <div class="home-footer-info">
+        <img src="img/RShomepic.jpg" class="home-footer-pic" alt="a picture of Rachel Smith">
+        <br>
+        <h3>RACHEL SMITH</h3>
+        <h3>931.292.3953</h3>
+        <h3>RachelHaysSmith@gmail.com</h3>
+        <br><br>
       </div>
     </footer>
 
