@@ -200,25 +200,27 @@ header {
 
 }
 
-.page-footer {
-  margin: 0 840px;
+footer#page-footer ul {
+  list-style-type: none;
+  margin-left: 0px;
+  padding: 0px;
   align-content: center;
   clear: both;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: auto;
 }
 
-.ftr-grid {
-  list-style-type: none;
+.ftr-grid{
+  margin-left: 800px;
   display: grid;
   grid-template-columns: 100px 100px 100px;
 }
 
-.ftr-grid_item {
-  width: auto;
+.ftr-grid_item ul {
   margin: 0;
-  padding: 5px;
+  padding: 0px;
+  width: auto;
 }
 
 div#home-social ul {
