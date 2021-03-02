@@ -2,11 +2,8 @@
 :root {
   --primary-bg-color: #cbebee;
   --secondary-bg-color: #964040;
-  --white: #ffffff;
-  --grey: #555555;
   --dark-grey: #2b2b2b;
   --light-grey: #f4f4f4;
-  --black: #000000;
   --act-color: #5e4048;
   --heading-height: 1.0;
   --reg-font-weight: 300;
@@ -21,7 +18,6 @@
 html, body {
   background-color: #6a7694;
   font-family: 'Lato', sans-serif;
-  text-rendering: optimizeLegibility;
   font-size: 18px;
   line-height: var(--heading-height);
   font-weight: var(--reg-font-weight);
@@ -31,10 +27,10 @@ h1,
 h2,
 h3 {
   line-height: var(--heading-height);
+  color: #ffffff;
 }
 
 h1 {
-  color: #ffffff;
   font-size: 350%;
   margin-top: 0;
   margin-bottom: 10px;
@@ -49,12 +45,10 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
-  color: #ffffff;
 }
 
 h3 {
   font-size: 20px;
-  color: var(--white);
 }
 
 p {
@@ -70,7 +64,7 @@ a {
 }
 
 a:visited {
-  color: var(--white);
+  color: #ffffff;
 }
 
 a:hover, a:focus {
@@ -114,7 +108,7 @@ header {
 .btn-full:visited {
   background-color: #964040;
   border: 1px solid #cbebee;
-  color: var(--white);
+  color: #ffffff;
   margin-right: 2px;
 }
 
@@ -122,7 +116,6 @@ header {
 .btn-ghost:visited {
   border: 1px solid #ffffff;
   color: #ffffff;
-  background-color: none;
 }
 
 .btn:hover,
@@ -148,7 +141,7 @@ header {
 
 .main-nav {
   padding: 50px;
-  list-style: none;
+  list-style-type: none;
   float: right;
 }
 
@@ -223,30 +216,34 @@ header {
 }
 
 .ftr-grid_item {
-  background-color: none;
   width: auto;
   margin: 0;
   padding: 5px;
 }
 
-.home-social {
+div#home-social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
   align-content: center;
   clear: both;
   display: flex;
-  flex-direction: column;
-  width: auto;
+  flex-direction: row;
+  color: #ffffff;
 }
 
 .home-social-grid {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: 75px 75px 75px;
 }
 
-.home-social-grid-item {
+.home-social-grid-item ul {
   width: auto;
   margin: 0;
-  padding: 5px;
+  padding: 0;
 }
 
 .home-footer {
@@ -260,7 +257,7 @@ header {
 }
 
 .home-footer-info {
-
+  color: #ffffff;
 }
 
 .home-footer-pic {
@@ -270,9 +267,6 @@ header {
   height: 140px;
   border-radius: 20px;
 }
-
-
-
 
 .about {
   padding: 70px;
@@ -284,12 +278,6 @@ header {
   width: 95px;
   height: 170px;
   border-radius: 20px;
-}
-
-.quote {
-  font-size: 32px;
-  color: #0b1242;
-  line-height: 2.0;
 }
 
 .standard-label {
@@ -319,10 +307,6 @@ header {
   .projects-grid_item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 22px;
   }
 }
 
