@@ -134,13 +134,14 @@ header {
 }
 
 .logo {
-  padding-top: 20px;
-  padding-left: 20px;
+  margin-top: 40px;
+  padding-left: 25px;
   float: left;
-  width: 350px;
+}
+
+.logo-pic {
+  width: 75px;
   height: auto;
-  margin-top: 20px;
-  border-radius: 20px;
 }
 
 .main-nav {
@@ -172,7 +173,9 @@ header {
 }
 
 .body-main {
-  margin: 75px 175px;
+  margin-top: 50px;
+  margin-left: 225px;
+  margin-right: 225px;
 }
 
 .page-header_item {
@@ -298,8 +301,8 @@ div#home-social ul {
 .home-footer-pic {
   float: left;
   margin-right: 20px;
-  width: 82px;
-  height: 140px;
+  width: 75px;
+  height: 150px;
   border-radius: 20px;
 }
 
