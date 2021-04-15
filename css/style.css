@@ -251,26 +251,29 @@ div#home-social ul {
   padding: 0;
 }
 
-.home-footer {
-  padding-left: 150px;
-  align-content: center;
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  background-color: #210e3e;
+.main-footer {
+  width: 100%;
+  height: auto;
+  background-color: #907a8f;
 }
 
-.home-footer-info {
-  color: #ffffff;
-}
-
-.home-footer-pic {
+.main-footer-pic {
   float: left;
-  margin-right: 20px;
   width: 75px;
   height: 150px;
   border-radius: 20px;
+}
+
+.main-footer-info {
+
+}
+
+.hfi-contact {
+  
+}
+
+.hfi-social {
+
 }
 
 .about {
