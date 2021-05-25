@@ -79,14 +79,14 @@ a:active {
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(img/earth-space.svg);
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  height: 100vh;
   background-color: #ecebed;
 }
 
 .hero-text-box {
-  margin-left: 12%;
+  margin-left: 15%;
   padding: 70px;
   position: absolute;
   width: 1400px;
@@ -126,8 +126,8 @@ header {
 
 .nav-row {
   max-width: 1800px;
-  margin: 0 100px;
-  padding: 15px;
+  margin: 50px 100px;
+  padding: 40px;
 }
 
 .logo {
@@ -149,7 +149,7 @@ header {
 
 .main-nav li {
   display: inline-block;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .main-nav li a:link,
@@ -295,7 +295,6 @@ div#home-social ul {
   border-style: solid;
   border-color: #d2d0d4;
   border-radius: 20px;
-  display: center;
   text-align: center;
 }
 
@@ -316,7 +315,6 @@ div#home-social ul {
 
 .about-grid-item {
   text-align: center;
-  border-style: solid 2px;
   border-color: #453c4e;
   border-radius: 20px;
   background-color: #8f8a94;
@@ -325,32 +323,6 @@ div#home-social ul {
 
 .standard-label {
   color: white;
-}
-
-/* Responsive classes--keep at end of css file */
-
-@media all and (max-width: 500px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .projects-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  /* shared code */
-  .projects-grid {
-    grid-gap: 10px;
-  }
-
-  .projects-grid_item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
 }
 
 @keyframes space-zoom {
@@ -365,9 +337,173 @@ div#home-social ul {
 #bkg {
   width: 100%;
   height: 100%;
-  position: relative;
   animation: space-zoom 150s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   background: url(img/earth-space.svg) top right no-repeat;
+}
+
+/* Responsive classes--keep at end of css file */
+
+@media all and (min-width: 1440px) and (orientation: landscape) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .hero-text-box {
+    margin-left: 15%;
+    padding: 70px;
+    position: absolute;
+    width: 1400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .projects-main {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 50px 50px 0;
+  }
+
+  .about {
+    padding: 25px;
+  }
+
+  .about-pic img {
+    margin-top: 25px;
+    margin-right: 0;
+    width: 175px;
+  }
+
+  .about-grid {
+    padding: 0;
+  }
+
+  .about-grid-item {
+    padding: 2px;
+  }
+
+  .main-footer-pic {
+    margin-left: 10%;
+  }
+
+  @keyframes space-zoom {
+    0% { background-size: 150%; }
+    10% { background-size: 175%; }
+    25% { background-size: 190%; }
+    50% { background-size: 200%; }
+    75% { background-size: 210%; }
+    100% { background-size: 220%; }
+  }
+
+  #bkg {
+    width: 100%;
+    height: 100%;
+    animation: space-zoom 150s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: url(img/earth-space.svg) top right no-repeat;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px) and (orientation: landscape) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .nav-row {
+    max-width: 900px;
+    margin: 0 50px;
+  }
+
+  .hero-text-box {
+    width: 800px;
+    margin-left: 5%;
+    padding: 0 20px;
+  }
+
+  .projects-main {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 50px 50px 0;
+  }
+
+  .about {
+    padding: 25px;
+  }
+
+  .about-pic img {
+    margin-top: 25px;
+    margin-right: 0;
+    width: 175px;
+  }
+
+  .about-grid {
+    padding: 0;
+  }
+
+  .about-grid-item {
+    padding: 2px;
+  }
+
+  .main-footer {
+    margin-top: 25px;
+  }
+
+  .main-footer-pic {
+    margin-left: 10%;
+  }
+
+  @keyframes space-zoom {
+    0% { background-size: 150%; }
+    10% { background-size: 175%; }
+    25% { background-size: 190%; }
+    50% { background-size: 200%; }
+    75% { background-size: 210%; }
+    100% { background-size: 220%; }
+  }
+
+  #bkg {
+    width: 100%;
+    height: 100%;
+    animation: space-zoom 150s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: url(img/earth-space.svg) top right no-repeat;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .projects-grid_item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
 }
